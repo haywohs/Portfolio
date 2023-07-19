@@ -54,7 +54,7 @@ const Skill = () => {
                 <div className="smallIcon">
                   <AiOutlineApartment size="60" />
                 </div>
-                <Card.Title>Make it</Card.Title>
+                <Card.Title>Dedication</Card.Title>
                 <Card.Text>Be a professional designer</Card.Text>
               </Card.Body>
             </Card>

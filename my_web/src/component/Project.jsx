@@ -1,5 +1,6 @@
 import React from "react";
 import { Row, Col, Container, Image } from "react-bootstrap";
+import Mongodb from "../pictures/mongodb.png";
 
 const Project = () => {
   return (
@@ -40,7 +41,7 @@ const Project = () => {
           </Col>
           <Col>
             <Image
-              src="https://storage-us-gcs.bfldr.com/85s8xk2j3k89b67xr8c7vwmv/v/1069931049/original/MongoDB_ForestGreen.png?Expires=1689456923&KeyName=gcs-bfldr-prod&Signature=Ae963ZJNlVCJI58zejVp4zWg-fk="
+              src={Mongodb}
               alt="mongoDB"
               width="100"
               className="pt-3 ms-3"
