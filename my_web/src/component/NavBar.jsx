@@ -10,6 +10,7 @@ import {
 import "./navbar.scss";
 import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
 import NavbarToggle from "react-bootstrap/esm/NavbarToggle";
+import Resume from "../files/YH_Resume.pdf";
 
 const NavBar = () => {
   return (
@@ -28,15 +29,15 @@ const NavBar = () => {
               <NavLink href="#experience" className="text-light">
                 Experience
               </NavLink>
-              <NavLink href="#Project" className="text-light">
-                Porject
+              <NavLink href="#skill" className="text-light">
+                Skill
               </NavLink>
-              <NavLink href="#Contact" className="text-light">
+              <NavLink href={Resume} className="text-light" download>
                 Contact
               </NavLink>
-              <NavDropdown title={<span>EN</span>} id="language-dropdown">
+              {/* <NavDropdown title={<span>EN</span>} id="language-dropdown">
                 <NavDropdown.Item href="/Portfolio/CN">CN</NavDropdown.Item>
-              </NavDropdown>
+              </NavDropdown> */}
             </Nav>
           </NavbarCollapse>
         </Container>

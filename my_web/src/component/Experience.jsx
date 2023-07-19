@@ -5,7 +5,7 @@ import { BsFillBookmarkCheckFill } from "react-icons/bs";
 
 const Experience = () => {
   return (
-    <div className="experience">
+    <div className="experience" id="experience">
       <Stack
         direction="horizontal"
         className="justify-content-evenly bg-secondary"

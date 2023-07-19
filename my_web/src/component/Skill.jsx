@@ -11,7 +11,7 @@ const Skill = () => {
   return (
     <>
       <hr />
-      <Container className="skill">
+      <Container className="skill" id="skill">
         <h3>WHAT I HAVE !</h3>
         <Row className="row-col-1 row-col-lg-3 g-4 ">
           <Col>
@@ -23,26 +23,22 @@ const Skill = () => {
                 <Card.Title className="text-center mt-1">
                   Collaborate
                 </Card.Title>
-                <Card.Text className="d-md-flex flex-column ms-2">
+                <Card.Text className="d-md-flex flex-column ms-4">
                   <div>
                     <BsLightningFill color="rgb(240, 163, 76)" />
-                    <small>User-Centric</small>
+                    <small>Cross-Functional</small>
                   </div>
                   <div>
                     <BsLightningFill color="rgb(240, 163, 76)" />
-                    <small>Wireframing & Prototyping</small>
+                    <small>Communication</small>
                   </div>
                   <div>
                     <BsLightningFill color="rgb(240, 163,76)" />
-                    <small>Information Architecture</small>
+                    <small>Team Belonging</small>
                   </div>
                   <div>
                     <BsLightningFill color="rgb(240, 163,76)" />
-                    <small>Design: Visual & Interaction</small>
-                  </div>
-                  <div>
-                    <BsLightningFill color="rgb(240, 163,76)" />
-                    <small>Usability Testing</small>
+                    <small>Flexibility & Adaptability</small>
                   </div>
                 </Card.Text>
               </Card.Body>
@@ -50,34 +46,82 @@ const Skill = () => {
           </Col>
           <Col>
             <Card style={{ width: "16rem" }}>
-              <Card.Body className="text-center">
-                <div className="smallIcon">
+              <Card.Body>
+                <div className="smallIcon text-center">
                   <AiOutlineApartment size="60" />
                 </div>
-                <Card.Title>Dedication</Card.Title>
-                <Card.Text>Be a professional designer</Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col>
-            <Card style={{ width: "16rem" }}>
-              <Card.Body className="text-center">
-                <div className="smallIcon">
-                  <MdOutlineEnhancedEncryption size="60" />
-                </div>
-                <Card.Title>Self-Enrichment</Card.Title>
-                <Card.Text>Be a professional designer</Card.Text>
+                <Card.Title className="text-center mt-1">Enthusiasm</Card.Title>
+                <Card.Text className="d-md-flex flex-column ms-4">
+                  <div>
+                    <BsLightningFill color="rgb(240, 163, 76)" />
+                    <small>Problem-Solving</small>
+                  </div>
+                  <div>
+                    <BsLightningFill color="rgb(240, 163, 76)" />
+                    <small>Accessible</small>
+                  </div>
+                  <div>
+                    <BsLightningFill color="rgb(240, 163, 76)" />
+                    <small>Unwavering</small>
+                  </div>
+                  <div>
+                    <BsLightningFill color="rgba(240, 163, 76,.0)" />
+                  </div>
+                </Card.Text>
               </Card.Body>
             </Card>
           </Col>
           <Col>
             <Card style={{ width: "16rem" }}>
               <Card.Body>
-                <div className="smallIcon">
+                <div className="smallIcon text-center">
+                  <MdOutlineEnhancedEncryption size="60" />
+                </div>
+                <Card.Title className="text-center">Self-Enrichment</Card.Title>
+                <Card.Text className="d-md-flex flex-column ms-4">
+                  <div>
+                    <BsLightningFill color="rgb(240, 163, 76)" />
+                    <small>Webinars</small>
+                  </div>
+                  <div>
+                    <BsLightningFill color="rgb(240, 163, 76)" />
+                    <small>Workshops</small>
+                  </div>
+                  <div>
+                    <BsLightningFill color="rgb(240, 163, 76)" />
+                    <small>TypeScript & AI</small>
+                  </div>
+                  <div>
+                    <BsLightningFill color="rgb(240, 163, 76)" />
+                    <small>Tech Hackthon</small>
+                  </div>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col>
+            <Card style={{ width: "16rem" }}>
+              <Card.Body>
+                <div className="smallIcon text-center">
                   <GiSoapExperiment size="60" />
                 </div>
-                <Card.Title>Create & Experiment</Card.Title>
-                <Card.Text>Be a professional designer</Card.Text>
+                <Card.Title className="text-center">
+                  Create & Experiment
+                </Card.Title>
+                <Card.Text className="d-md-flex flex-column ms-1">
+                  <div>
+                    <BsLightningFill color="rgb(240, 163, 76)" />
+                    <small>New Technology</small>
+                  </div>
+                  <div>
+                    <BsLightningFill color="rgb(240, 163, 76)" />
+                    <small>Never give up to explore</small>
+                  </div>
+                  <div>
+                    <BsLightningFill color="rgb(240, 163, 76)" />
+                    <small>Fearlessly venture into inter-discipline</small>
+                  </div>
+                </Card.Text>
               </Card.Body>
             </Card>
           </Col>

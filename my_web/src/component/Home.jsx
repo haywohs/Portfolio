@@ -7,7 +7,7 @@ import { Alert, Container } from "react-bootstrap";
 const Home = () => {
   return (
     <>
-      <div className="home">
+      <div className="home" id="home">
         <NavBar />
         <Container className="d-flex">
           <div className="left">

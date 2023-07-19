@@ -4,7 +4,7 @@ import Mongodb from "../pictures/mongodb.png";
 
 const Project = () => {
   return (
-    <>
+    <div className="project">
       <hr />
       <Container>
         <Row>
@@ -74,7 +74,7 @@ const Project = () => {
         </Row>
       </Container>
       <hr />
-    </>
+    </div>
   );
 };
 
