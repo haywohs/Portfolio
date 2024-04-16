@@ -108,9 +108,8 @@ const Experience = () => {
                 <span>
                   <BsFillBookmarkCheckFill color="green" size="25" />
                 </span>
-                10+ Event of information technology in Calgary, includes
-                HackX(Full stack), NEO(Algile thinking), Lunch Without Lunch,
-                etc
+                10+ Event of information technology in Calgary, includes HackX
+                (Full stack), NEO (Algile thinking), Lunch Without Lunch, etc
               </p>
             </Col>
           </Row>

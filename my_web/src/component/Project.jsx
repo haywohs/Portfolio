@@ -1,6 +1,5 @@
 import React from "react";
 import { Row, Col, Container, Image } from "react-bootstrap";
-import Mongodb from "../pictures/mongodb.png";
 
 const Project = () => {
   return (
@@ -39,14 +38,7 @@ const Project = () => {
               width="100"
             />
           </Col>
-          <Col>
-            <Image
-              src={Mongodb}
-              alt="mongoDB"
-              width="100"
-              className="pt-3 ms-3"
-            />
-          </Col>
+
           <Col>
             <Image
               src="https://code.visualstudio.com/assets/images/code-stable.png"

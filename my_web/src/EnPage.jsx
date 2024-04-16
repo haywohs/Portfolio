@@ -8,9 +8,9 @@ const EnPage = () => {
   return (
     <div>
       <Home />
-      <Experience />
+      {/* <Experience />
       <Skill />
-      <Project />
+      <Project /> */}
     </div>
   );
 };
