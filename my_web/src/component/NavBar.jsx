@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Navbar,
-  Container,
-  Nav,
-  Button,
-  Dropdown,
-  Image,
-} from "react-bootstrap";
+import { Navbar, Container, Nav, Image } from "react-bootstrap";
 import "./navbar.scss";
 import Instagram from "../pictures/instagram.png";
 import LinkedIn from "../pictures/linkedin.png";
@@ -31,16 +24,22 @@ const NavBar = () => {
               </Nav.Link> */}
             </Nav>
             <Nav>
-              <Nav.Link href="https://www.instagram.com/haywo0901/">
+              <Nav.Link
+                href="https://www.instagram.com/haywo0901/"
+                target="_blank"
+              >
                 <Image src={Instagram} alt="Instagram" className="images" />
               </Nav.Link>
-              <Nav.Link href="https://www.linkedin.com/in/haywohs/">
+              <Nav.Link
+                href="https://www.linkedin.com/in/haywohs/"
+                target="_blank"
+              >
                 <Image src={LinkedIn} alt="LinkedIn" className="images" />
               </Nav.Link>
-              <Nav.Link href="https://github.com/haywohs">
+              <Nav.Link href="https://github.com/haywohs" target="_blank">
                 <Image src={Github} alt="Github" className="images" />
               </Nav.Link>
-              <Nav.Link href="https://medium.com/@haywo">
+              <Nav.Link href="https://medium.com/@haywo" target="_blank">
                 <Image src={Medium} alt="Medium" className="images" />
               </Nav.Link>
             </Nav>

@@ -12,13 +12,34 @@ const HomeCard = () => {
           <Row>
             <Col md={4}>
               <Card className="card">
-                <Card.Img variant="top" src={Project1} />
+                <a
+                  href="https://github.com/haywohs/DrinkWebApp"
+                  alt="drinkGithub"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Card.Img variant="top" src={Project1} />
+                </a>
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
-                  <Card.Text>Some quick example</Card.Text>
-                  <Button variant="link">
+                  <a
+                    href="https://github.com/haywohs/DrinkWebApp"
+                    alt="drinkGithub"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Card.Title>Drink Store</Card.Title>
+                  </a>
+                  <Card.Text>
+                    Ecommerce website Developed by MERN stack
+                  </Card.Text>
+                  <Button
+                    variant="link"
+                    href="https://github.com/haywohs/DrinkWebApp"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <BiSolidRightArrowAlt
-                      style={{ color: "#3C3431" }}
+                      style={{ color: "#FDF4E3" }}
                       size={25}
                     />
                   </Button>
@@ -27,13 +48,34 @@ const HomeCard = () => {
             </Col>
             <Col md={4}>
               <Card className="card">
-                <Card.Img variant="top" src={Project1} />
+                <a
+                  href="https://github.com/haywohs/DrinkWebApp"
+                  alt="drinkGithub"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Card.Img variant="top" src={Project1} />
+                </a>
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
-                  <Card.Text>Some quick example</Card.Text>
-                  <Button variant="link">
+                  <a
+                    href="https://github.com/haywohs/DrinkWebApp"
+                    alt="drinkGithub"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Card.Title>Drink Store</Card.Title>
+                  </a>
+                  <Card.Text>
+                    Ecommerce website Developed by MERN stack
+                  </Card.Text>
+                  <Button
+                    variant="link"
+                    href="https://github.com/haywohs/DrinkWebApp"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <BiSolidRightArrowAlt
-                      style={{ color: "#3C3431" }}
+                      style={{ color: "#FDF4E3" }}
                       size={25}
                     />
                   </Button>
@@ -42,13 +84,34 @@ const HomeCard = () => {
             </Col>
             <Col md={4}>
               <Card className="card">
-                <Card.Img variant="top" src={Project1} />
+                <a
+                  href="https://github.com/haywohs/DrinkWebApp"
+                  alt="drinkGithub"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Card.Img variant="top" src={Project1} />
+                </a>
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
-                  <Card.Text>Some quick example</Card.Text>
-                  <Button variant="link">
+                  <a
+                    href="https://github.com/haywohs/DrinkWebApp"
+                    alt="drinkGithub"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Card.Title>Drink Store</Card.Title>
+                  </a>
+                  <Card.Text>
+                    Ecommerce website Developed by MERN stack
+                  </Card.Text>
+                  <Button
+                    variant="link"
+                    href="https://github.com/haywohs/DrinkWebApp"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <BiSolidRightArrowAlt
-                      style={{ color: "#3C3431" }}
+                      style={{ color: "#FDF4E3" }}
                       size={25}
                     />
                   </Button>

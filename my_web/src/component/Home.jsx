@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./home.scss";
 import NavBar from "./NavBar";
-import { Badge, Carousel, Col, Row } from "react-bootstrap";
+import { Badge, Col, Row } from "react-bootstrap";
 import HomeCard from "./HomeCard.jsx";
 import Footer from "./Footer.jsx";
 import Robot from "../pictures/robot.jpg";

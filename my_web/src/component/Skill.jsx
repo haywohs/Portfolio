@@ -1,132 +1,116 @@
 import React from "react";
-import { Container, Card, Row, Col } from "react-bootstrap";
-import { CgDesignmodo } from "react-icons/cg";
-import { BsLightningFill } from "react-icons/bs";
-import { GiSoapExperiment } from "react-icons/gi";
-import { AiOutlineApartment } from "react-icons/ai";
-import { MdOutlineEnhancedEncryption } from "react-icons/md";
+import NavBar from "./NavBar.jsx";
+import RadarChart from "../pictures/radar.png";
+import { Row, Col, Card } from "react-bootstrap";
 import "./skill.scss";
+import Problem from "../pictures/problemSolving.png";
+import Collaboration from "../pictures/collaboration.png";
+import Multitasking from "../pictures/multitasking.jpg";
+import Time from "../pictures/timeManagement.jpg";
+import Footer from "./Footer.jsx";
 
 const Skill = () => {
   return (
     <>
-      <hr />
-      <Container className="skill" id="skill">
-        <h3>WHAT I HAVE !</h3>
-        <Row className="row-col-1 row-col-lg-3 g-4 ">
-          <Col>
-            <Card style={{ width: "16rem" }}>
-              <Card.Body>
-                <div className="smallIcon text-center">
-                  <CgDesignmodo size="60" />
-                </div>
-                <Card.Title className="text-center mt-1">
-                  Collaborate
-                </Card.Title>
-                <Card.Text className="d-md-flex flex-column ms-4">
-                  <div>
-                    <BsLightningFill color="rgb(240, 163, 76)" />
-                    <small>Cross-Functional</small>
+      <div className="skill">
+        <NavBar />
+        <div className="hardSkills">
+          <h4>Hard Skills</h4>
+          <Row>
+            <Col md={6} className="radar">
+              <img src={RadarChart} alt="radarChart" />
+            </Col>
+            <Col md={6} className="others"></Col>
+          </Row>
+        </div>
+        <div className="softSkills">
+          <h4>Soft Skills</h4>
+          <Row className="softrow">
+            <Col md={3}>
+              <div className="flipy">
+                <Card className="flipper">
+                  <div className="face front">
+                    <Card.Img src={Problem} alt="problem-solving" />
                   </div>
-                  <div>
-                    <BsLightningFill color="rgb(240, 163, 76)" />
-                    <small>Communication</small>
+                  <Card.Body className="face back">
+                    <Card.Title>Problem-Solving</Card.Title>
+                    <Card.Text className="cardText">
+                      Exceptional problem-solving abilities drive success in
+                      both professional and personal realms, fostering
+                      innovation, efficiency, and continual growth.
+                      {/* Exemplary problem-solving skills enrich both company
+                      endeavours and personal pursuits, consistently overcoming
+                      challenges with creativity, resilience, and strategic
+                      thinking for optimal outcomes and growth. */}
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </div>
+            </Col>
+            <Col md={3}>
+              <div className="flipy">
+                <Card className="flipper">
+                  <div className="face front">
+                    <Card.Img src={Collaboration} alt="collaboration" />
                   </div>
-                  <div>
-                    <BsLightningFill color="rgb(240, 163,76)" />
-                    <small>Team Belonging</small>
+                  <Card.Body className="face back">
+                    <Card.Title>Collaboration</Card.Title>
+                    <Card.Text className="cardText">
+                      My exceptional collaboration skills foster synergy,
+                      effective teamwork, and mutual success, enhancing
+                      productivity and relationships in the workplace.
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </div>
+            </Col>
+            <Col md={3}>
+              <div className="flipy">
+                <Card className="flipper">
+                  <div className="face front">
+                    <Card.Img
+                      src={Multitasking}
+                      alt="multi-tasking"
+                      id="higher"
+                    />
                   </div>
-                  <div>
-                    <BsLightningFill color="rgb(240, 163,76)" />
-                    <small>Flexibility & Adaptability</small>
+                  <Card.Body className="face back">
+                    <Card.Title>Multi-tasking</Card.Title>
+                    <Card.Text className="cardText">
+                      Masterful multitasking abilities optimize productivity,
+                      efficiently managing diverse tasks, deadlines, and
+                      responsibilities to excel in both professional endeavors
+                      and personal pursuits.
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </div>
+            </Col>
+            <Col md={3}>
+              <div className="flipy">
+                <Card className="flipper">
+                  <div className="face front">
+                    <Card.Img src={Time} alt="time management" id="higher" />
                   </div>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col>
-            <Card style={{ width: "16rem" }}>
-              <Card.Body>
-                <div className="smallIcon text-center">
-                  <AiOutlineApartment size="60" />
-                </div>
-                <Card.Title className="text-center mt-1">Enthusiasm</Card.Title>
-                <Card.Text className="d-md-flex flex-column ms-4">
-                  <div>
-                    <BsLightningFill color="rgb(240, 163, 76)" />
-                    <small>Problem-Solving</small>
-                  </div>
-                  <div>
-                    <BsLightningFill color="rgb(240, 163, 76)" />
-                    <small>Accessible</small>
-                  </div>
-                  <div>
-                    <BsLightningFill color="rgb(240, 163, 76)" />
-                    <small>Unwavering</small>
-                  </div>
-                  <div>
-                    <BsLightningFill color="rgba(240, 163, 76,.0)" />
-                  </div>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col>
-            <Card style={{ width: "16rem" }}>
-              <Card.Body>
-                <div className="smallIcon text-center">
-                  <MdOutlineEnhancedEncryption size="60" />
-                </div>
-                <Card.Title className="text-center">Self-Enrichment</Card.Title>
-                <Card.Text className="d-md-flex flex-column ms-4">
-                  <div>
-                    <BsLightningFill color="rgb(240, 163, 76)" />
-                    <small>Webinars</small>
-                  </div>
-                  <div>
-                    <BsLightningFill color="rgb(240, 163, 76)" />
-                    <small>Workshops</small>
-                  </div>
-                  <div>
-                    <BsLightningFill color="rgb(240, 163, 76)" />
-                    <small>TypeScript & AI</small>
-                  </div>
-                  <div>
-                    <BsLightningFill color="rgb(240, 163, 76)" />
-                    <small>Tech Hackthon</small>
-                  </div>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col>
-            <Card style={{ width: "16rem" }}>
-              <Card.Body>
-                <div className="smallIcon text-center">
-                  <GiSoapExperiment size="60" />
-                </div>
-                <Card.Title className="text-center">
-                  Create & Experiment
-                </Card.Title>
-                <Card.Text className="d-md-flex flex-column ms-1">
-                  <div>
-                    <BsLightningFill color="rgb(240, 163, 76)" />
-                    <small>New Technology</small>
-                  </div>
-                  <div>
-                    <BsLightningFill color="rgb(240, 163, 76)" />
-                    <small>Never give up to explore</small>
-                  </div>
-                  <div>
-                    <BsLightningFill color="rgb(240, 163, 76)" />
-                    <small>Fearlessly venture into inter-discipline</small>
-                  </div>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
-      </Container>
+                  <Card.Body className="face back">
+                    <Card.Title>Time Management</Card.Title>
+                    <Card.Text className="cardText">
+                      My adept time management ensures efficient allocation of
+                      resources, meeting deadlines, and maintaining work-life
+                      balance for optimal productivity and fulfillment.
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </div>
+            </Col>
+          </Row>
+        </div>
+        <div className="footer">
+          <Row>
+            <Footer />
+          </Row>
+        </div>
+      </div>
     </>
   );
 };
