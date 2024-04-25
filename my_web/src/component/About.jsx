@@ -1,9 +1,10 @@
 import React from "react";
 import NavBar from "./NavBar.jsx";
-import { Row, Col, Carousel } from "react-bootstrap";
+import { Row, Col, Carousel, Image } from "react-bootstrap";
 import Chart from "../pictures/chart.png";
 import "./about.scss";
 import Footer from "./Footer.jsx";
+import { SAIT, Dietitian, Google, WorkingHoliday } from "../photos.js";
 
 const About = () => {
   return (
@@ -15,10 +16,10 @@ const About = () => {
             <h3>Me..</h3>
           </p>
           <Row>
-            <Col md={6} className="chartImage">
+            <Col md={8} xl={6} className="chartImage">
               <img src={Chart} alt="chart" />
             </Col>
-            <Col md={6} className="chartText">
+            <Col md={8} xl={6} className="chartText">
               <p>
                 <span>Extroverted</span>, always seeking social interactions and
                 energized by being around others.
@@ -74,20 +75,28 @@ const About = () => {
             </Col>
             <Col md={3}>
               <Carousel>
-                <Carousel.Item>
-                  <img src="" alt="" />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img src="" alt="" />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img src="" alt="" />
-                </Carousel.Item>
+                {SAIT.map((photo) => {
+                  return (
+                    <Carousel.Item key={photo.id} className="carousel">
+                      <img src={photo.img} alt={photo.alt} className="sait" />
+                    </Carousel.Item>
+                  );
+                })}
               </Carousel>
             </Col>
           </Row>
           <Row>
-            <Col md={3}></Col>
+            <Col md={3}>
+              <Carousel>
+                {Google.map((photo) => {
+                  return (
+                    <Carousel.Item key={photo.id} className="carousel">
+                      <img src={photo.img} alt={photo.alt} className="google" />
+                    </Carousel.Item>
+                  );
+                })}
+              </Carousel>
+            </Col>
             <Col md={9} className="experienceTextR">
               <h4>Hardware QA Engineer - Google</h4>
               <p>
@@ -115,10 +124,34 @@ const About = () => {
                 multinational tech companies seeking global talent.
               </p>
             </Col>
-            <Col md={3}></Col>
+            <Col md={3}>
+              <Carousel>
+                {WorkingHoliday.map((photo) => {
+                  return (
+                    <Carousel.Item key={photo.id} className="carousel">
+                      <img src={photo.img} alt={photo.alt} className="wh" />
+                    </Carousel.Item>
+                  );
+                })}
+              </Carousel>
+            </Col>
           </Row>
           <Row>
-            <Col md={3}></Col>
+            <Col md={3}>
+              <Carousel>
+                {Dietitian.map((photo) => {
+                  return (
+                    <Carousel.Item key={photo.id} className="carousel">
+                      <img
+                        src={photo.img}
+                        alt={photo.alt}
+                        className="dietitian"
+                      />
+                    </Carousel.Item>
+                  );
+                })}
+              </Carousel>
+            </Col>
             <Col md={9} className="experienceTextR">
               <h4>Dietitian</h4>
               <p>
