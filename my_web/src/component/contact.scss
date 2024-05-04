@@ -16,6 +16,10 @@
         width:8rem;
         height:8rem;
         margin-top:5%;
+        &:hover{
+            animation: bounce 1s infinite;
+        }
+        
         
         img{
             width:5rem;
@@ -41,5 +45,19 @@
             height:2.5rem;
             margin-left:70%;
         }
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
     }
 }

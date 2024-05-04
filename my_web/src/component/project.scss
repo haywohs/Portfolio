@@ -1,0 +1,36 @@
+.projectcontainer{
+
+    margin:3% auto;
+    
+    .layoutrow{
+        width: 65%;
+        height: 55%;
+        box-shadow: 0 10px 10px -10px;
+        margin: 3% auto;
+    }
+    .layout {
+        display:flex;
+        flex-direction: row;
+        justify-content: center; 
+    }
+    
+    .layoutimg{
+        cursor:pointer;
+        img{
+            width:15rem;
+            height:15rem;
+        }
+    }
+    .layouttext{
+        width:50rem;
+        cursor:pointer;
+        h2{
+            padding-bottom: 2%;
+        }   
+        p{
+            text-align: start;
+        }
+    }
+    
+
+}

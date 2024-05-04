@@ -4,6 +4,7 @@ import EnPage from "./EnPage.jsx";
 import About from "./component/About.jsx";
 import Skill from "./component/Skill.jsx";
 import Contact from "./component/Contact.jsx";
+import Project from "./component/Project.jsx";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path='/Portfolio' element={<EnPage />} />
         <Route path='/Portfolio/about' element={<About />} />
+        <Route path='/Portfolio/project' element={<Project />} />
         <Route path='/Portfolio/skill' element={<Skill />} />
         <Route path="/Portfolio/contact" element={<Contact />} />
       </Routes>

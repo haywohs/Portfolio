@@ -1,6 +1,6 @@
 import React from "react";
 import NavBar from "./NavBar.jsx";
-import { Row, Col, Carousel, Image } from "react-bootstrap";
+import { Row, Col, Carousel } from "react-bootstrap";
 import Chart from "../pictures/chart.png";
 import "./about.scss";
 import Footer from "./Footer.jsx";

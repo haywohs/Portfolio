@@ -27,7 +27,7 @@ const Footer = () => {
         </div>
         <div className="initials">
           <Row>
-            <Col md={{ span: 2, offset: 1 }}>@Haywo H</Col>
+            <Col md={{ span: 2, offset: 1 }}>@Haywo H 2024</Col>
             <Col md={{ span: 3, offset: 6 }}>
               <Button
                 variant="outline-light"

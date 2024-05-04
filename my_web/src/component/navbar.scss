@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Babylonica&display=swap');
 
 .navbar{
+    animation:fadein ease 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+
     background-color: #3C3431;
    a{
     color: #FDF4E3;
@@ -21,3 +25,11 @@
     border-radius: 11px;
 }
 
+@keyframes fadein {
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}

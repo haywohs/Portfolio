@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import NavBar from "./NavBar.jsx";
 import RadarChart from "../pictures/radar.png";
-import { Row, Col, Card } from "react-bootstrap";
+import { Row, Col, Card, Button } from "react-bootstrap";
 import "./skill.scss";
 import Problem from "../pictures/problemSolving.png";
 import Collaboration from "../pictures/collaboration.png";
@@ -10,6 +10,11 @@ import Time from "../pictures/timeManagement.jpg";
 import Footer from "./Footer.jsx";
 
 const Skill = () => {
+  const [pop, setPop] = useState(false);
+  const togglePopup = () => {
+    setPop(!pop);
+  };
+
   return (
     <>
       <div className="skill">
@@ -17,10 +22,79 @@ const Skill = () => {
         <div className="hardSkills">
           <h4>Hard Skills</h4>
           <Row>
+            {pop && (
+              <Col md={3} className="popup">
+                <div className="popleft">
+                  <ul>
+                    <li>
+                      Java<span>7.5</span>
+                    </li>
+                    <p>
+                      Proficient in Java for robust, scalable applications.
+                      Skilled in Spring, Hibernate, and enterprise development.
+                    </p>
+                    <li>
+                      NodeJs<span style={{ color: " blue" }}>8</span>
+                    </li>
+                    <p>
+                      Experienced in NodeJS for server-side Javascript
+                      development in MERN stack
+                    </p>
+                    <li>
+                      SQL, MySQL<span>7.5</span>
+                    </li>
+                    <p>
+                      Writing complex SQL queries for data management. Designing
+                      and implementing database schemas to ensure the
+                      performance and protect sensitive information.
+                    </p>
+                  </ul>
+                </div>
+              </Col>
+            )}
             <Col md={6} className="radar">
               <img src={RadarChart} alt="radarChart" />
+              <Button
+                className="radarButton"
+                variant="none"
+                onClick={togglePopup}
+              >
+                Detail
+              </Button>
             </Col>
-            <Col md={6} className="others"></Col>
+            {pop && (
+              <Col md={3} className="popup">
+                <div className="popright">
+                  <ul>
+                    <li>
+                      TypeScript<span>4</span>
+                    </li>
+                    <li>
+                      MongoDB<span style={{ color: "blue" }}>8</span>
+                    </li>
+                    <p>
+                      Utilizing MongoDB for NoSQL database solutions.
+                      Experienced in designing schemas and performing CRUD
+                      operations into a full-stack application.
+                    </p>
+                    <li>
+                      React<span style={{ color: "red" }}>9.5</span>
+                    </li>
+                    <p>
+                      Proficient in React for building interactive user
+                      interfaces and Ecommerce websites
+                    </p>
+                    <li>
+                      UI/UX<span>7.5</span>
+                    </li>
+                    <p>
+                      Experienced in UI/UX design principles for creating
+                      intuitive user experiences.
+                    </p>
+                  </ul>
+                </div>
+              </Col>
+            )}
           </Row>
         </div>
         <div className="softSkills">
