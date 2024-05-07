@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import NavBar from "./NavBar.jsx";
 import { Row, Col, Button, Image, Form } from "react-bootstrap";
 import "./contact.scss";
@@ -7,8 +7,49 @@ import LinkedIn from "../pictures/linkedin.png";
 import Medium from "../pictures/medium.png";
 import Github from "../pictures/github.png";
 import Footer from "./Footer.jsx";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    sendEmail(formData);
+    console.log(formData);
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
+  };
+
+  const sendEmail = (data) => {
+    const serviceID = "service_qmynh58";
+    const templateID = "template_8fjjuoa";
+    const publicKey = "4weMPYHLkeP2tpZxL";
+
+    emailjs
+      .send(serviceID, templateID, data, publicKey)
+      .then((response) => {
+        console.log("Email sent successfully", response);
+      })
+      .catch((error) => {
+        console.log("Email failed to send", error);
+      });
+  };
+
   return (
     <>
       <div className="contact">
@@ -58,12 +99,28 @@ const Contact = () => {
           </Row>
         </div>
         <div className="contactform">
-          <Form className="row inputform">
+          <Form className="row inputform" onSubmit={handleSubmit}>
             <Form.Group className="col-md-6">
               <Form.Label className="label">Full Name</Form.Label>
-              <Form.Control type="text" placeholder="Enter Name" />
+              <Form.Control
+                type="text"
+                placeholder="Enter Name"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
               <Form.Label className="label">Email</Form.Label>
-              <Form.Control type="email" placeholder="Enter Email" />
+              <Form.Control
+                type="email"
+                placeholder="Enter Email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
             </Form.Group>
             <Form.Group className="col-md-6">
               <Form.Label className="label">Message</Form.Label>
@@ -71,6 +128,11 @@ const Contact = () => {
                 as="textarea"
                 placeholder="Talk to me..."
                 rows={4}
+                id="message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                required
               />
             </Form.Group>
             <Button type="submit" className="submitbtn">

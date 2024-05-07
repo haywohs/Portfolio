@@ -13,8 +13,7 @@
             border-radius:50%;
             width:100vh;
             animation:rotateImage 0.8s;
-            animation-iteration-count: 1;
-            
+            animation-iteration-count: 1;     
         }
         .radarButton{
             display:none;
@@ -24,10 +23,10 @@
             background-color: #3C3431;
             color:#ffffff;
             width:16%;
+            cursor:pointer;
         }
         img:hover+.radarButton{
             display:block;
-            cursor: pointer;
         }
     }
     .popup{
@@ -39,14 +38,22 @@
             margin-left:5%;
         }
         li{
+            width:50%;
             list-style-type:circle;
             font-weight: 900;
             span{
                 margin-left:5px;
             }
         }
+        .shinytext {
+            text-shadow: 0 0 5px #E1C391, 0 0 10px #E1C391, 0 0 15px #E1C391, 0 0 20px #E1C391, 0 0 25px #E1C391, 0 0 30px #E1C391, 0 0 35px #E1C391;
+            animation: shine 1.5s infinite alternate;
+        }
+        
     }
+    
 }
+
 
 .softSkills{
     height:100vh;
@@ -146,5 +153,14 @@
     }
     100%{
         transform:rotate(0deg);
+    }
+}
+
+@keyframes shine{
+    100%{
+        text-shadow:0 0 10px #705446, 0 0 100px #705446, 0 0 10px #705446;
+    }
+    50%{
+        text-shadow:0 0 50px #705446, 0 0 150px #705446, 0 0 50px #705446;
     }
 }

@@ -33,7 +33,7 @@ const Skill = () => {
                       Proficient in Java for robust, scalable applications.
                       Skilled in Spring, Hibernate, and enterprise development.
                     </p>
-                    <li>
+                    <li className="shinytext">
                       NodeJs<span style={{ color: " blue" }}>8</span>
                     </li>
                     <p>
@@ -69,7 +69,7 @@ const Skill = () => {
                     <li>
                       TypeScript<span>4</span>
                     </li>
-                    <li>
+                    <li className="shinytext">
                       MongoDB<span style={{ color: "blue" }}>8</span>
                     </li>
                     <p>
@@ -77,7 +77,7 @@ const Skill = () => {
                       Experienced in designing schemas and performing CRUD
                       operations into a full-stack application.
                     </p>
-                    <li>
+                    <li className="shinytext">
                       React<span style={{ color: "red" }}>9.5</span>
                     </li>
                     <p>
