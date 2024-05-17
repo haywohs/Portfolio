@@ -1,0 +1,22 @@
+.project{
+    margin: 2% auto;
+    width:80%;
+    h2{
+        color:#705446; 
+    }
+
+    .card:hover{
+    background-color: #FDF4E3;
+    transform:rotateZ(-10deg);
+    }
+    
+   
+    .project-button{
+        background-color: #705446;
+        margin-left:60%;
+        margin-top:5%;
+        &:hover{
+            background-color: #8FAABB;
+        }
+    }
+}

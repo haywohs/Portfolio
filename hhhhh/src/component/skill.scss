@@ -1,0 +1,95 @@
+.skill{
+    margin-top:5%;
+    margin-bottom:2%;
+    h2{
+        text-align: center;
+    }
+    .skill-layout{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:wrap;
+
+    }
+    .skill-card{
+        width:100px;
+        height:100px;
+        border-radius:50%;
+        margin-bottom:20px;
+        animation:float 3s infinite alternate ease-in-out;
+        .skill-img{
+            width:100%;
+            height:100%;
+            object-fit:contain;
+        }
+        &:nth-child(odd){
+            animation-delay:0.6s;
+        }
+        &:nth-child(even){
+            animation-delay:1s;
+        }
+    }
+}
+
+.flipy {
+    perspective: 1000px;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+
+
+    .flipper:hover {
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+    }
+
+    .flipper {
+        width: 90%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: 1s;
+        margin: 0 auto;
+        background-color: #E1C391;
+        border: none;
+
+
+        .face {
+            width: 85%;
+            height: 90%;
+            position: absolute;
+            top: 5%;
+            left: 6%;
+            overflow: hidden;
+            backface-visibility: hidden;
+            z-index: 2;
+
+            img {
+                height:40vh;
+                background-color: #ffffff;
+                border-radius: 30%;
+            }
+        }
+        .flip-text{
+            position:absolute;
+            top:80%;
+            left:25%;
+            transform: translate(-30%,-5%);
+            text-align: center;
+        }
+    }
+}
+
+@keyframes float {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+    
+}

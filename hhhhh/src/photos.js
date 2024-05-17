@@ -1,0 +1,53 @@
+export const SkillImg = [
+    {   
+        id:1,
+        img:require("./pictures/html5.png"),
+        alt: "HTML5",
+    },
+    {
+        id:2,
+        img:require("./pictures/figma.png"),
+        alt:"Figma",
+    },
+    {
+        id:3,
+        img:require("./pictures/sql.png"),
+        alt:"SQL",
+    },
+    {
+        id:4,
+        img:require("./pictures/react.png"),
+        alt:"React",
+    },
+    {
+        id:5,
+        img:require("./pictures/javascript.png"),
+        alt:"Javascript",
+    },
+    {
+        id:6,
+        img:require("./pictures/typescript.png"),
+        alt:"Typescript",
+    },
+    {
+        id:7,
+        img:require("./pictures/mysql.png"),
+        alt:"MySQL",
+    },
+    {
+        id:8, 
+        img:require("./pictures/java.png"),
+        alt:"Java",
+    },
+    {
+        id:9,
+        img:require("./pictures/nodejs.png"),
+        alt:"Node.js",
+    },
+    {
+        id:10,
+        img:require("./pictures/mongodb.png"),
+        alt:"MongoDB",
+    }
+];
+

@@ -1,0 +1,51 @@
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+hr {
+    color:#705446;
+    height:6px;
+    background-color: #705446;
+}
+
+.arrowChange {
+
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 80%;
+    margin: -10px auto;
+
+}
+
+.arrowChange:hover {
+    animation: bounce 1s infinite;
+    animation-timing-function: ease;
+}
+
+.initials {
+    margin: 3rem auto;
+
+    .init-btn{
+        display:flex;
+        justify-content:end;
+    }
+    img {
+        width: 25px;
+        height: 25px;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+}
